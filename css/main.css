@@ -1,0 +1,62 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+button {
+  background-color: #fff; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+ul, li {
+  list-style: none;
+  padding: 0; }
+
+body {
+  background-color: #000; }
+  body .main {
+    min-height: 100%;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #eeefef; }
+
+.main-index .top {
+  background: -webkit-linear-gradient(left, #0069b7, #0098e1, #0069b7);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(left, #0069b7, #0098e1, #0069b7);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(left, #0069b7, #0098e1, #0069b7);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #0069b7, #0098e1, #0069b7);
+  /* 标准的语法 */ }
+  .main-index .top .top-logo {
+    position: relative;
+    width: 90%;
+    margin: 0 auto; }
+    .main-index .top .top-logo img {
+      width: 70%;
+      padding: 20px 17% 12px 13%; }
+    .main-index .top .top-logo-right {
+      position: absolute;
+      right: 2%;
+      top: 20px;
+      height: 50%;
+      background-image: url(http://placehold.it/30x30);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center; }
+
+/*# sourceMappingURL=main.css.map */

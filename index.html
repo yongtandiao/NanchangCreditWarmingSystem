@@ -5,15 +5,105 @@
 	<title>南昌市企业监管警示系统</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 </head>
 <body>
 	<div class="main main-index">
+
 		<div class="top">
 			<div class="top-logo">
 				<img src="http://placehold.it/600x100" />
 				<div class="top-logo-right"></div>
 			</div>
 		</div>
+
+		<div class="top-search">
+			<div class="search">
+				<input type="text" />
+				<button></button>
+			</div>
+		</div>
+
+		<div id="Coat" style="position: relative;/* height: 290px; width: 222px; margin: 0 auto; top: 50px;*/">
+      <div class="slider single-item">
+        <div><a id="banner1"><img src="images/banner/banner1.png" style="width: 100%;" /></a></div>
+        <div><a id="banner2"><img src="images/banner/banner2.png" style="width: 100%;" /></a></div>
+        <div><a id="banner3"><img src="images/banner/banner3.png" style="width: 100%;" /></a></div>
+        <div><a id="banner4"><img src="images/banner/banner4.png" style="width: 100%;" /></a></div>
+      </div>
+    </div>
+
+    <div class="box">
+    	<div class="box-main">
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-search.png" />
+    				<p>企业查询</p>
+    			</div>
+    		</div>
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-normal.png" />
+    				<p>正常企业</p>
+    			</div>
+    		</div>
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-warm.png" />
+    				<p>警示企业</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="box-main">
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-cost.png" />
+    				<p>消费警示</p>
+    			</div>
+    		</div>
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-guide.png" />
+    				<p>创业指导</p>
+    			</div>
+    		</div>
+    		<div class="box-main-single">
+    			<div class="box-main-single-content">
+    				<img src="images/index-notice.png" />
+    				<p>公示公告</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div class="news">
+    	<div class="news-top">最新新闻</div>
+    </div>
+
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.single-item').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplayspeed: 2000,
+            arrows: false
+        });
+
+        $('#closeCoat').click(function(){
+          $('#Coat').hide();
+        })
+      });
+    </script>
+
 	</div>
 </body>
 </html>
